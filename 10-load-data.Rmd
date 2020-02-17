@@ -1,0 +1,40 @@
+---
+title: "10-load-data"
+output: html_notebook
+---
+
+The purpose of this notebook is to load and clean the data.  It should also test the data (e.g., by assertr) to ensure that assumptions about the data are met, and store the cleaned and tested data.
+
+```{r}
+#Import helpful packages
+library(haven)
+library(vroom)
+library(boxr)
+library(janitor)
+library(assertr)
+```
+
+
+
+```{r}
+library(readr)
+temps <- read_csv("data/CrossvilleTemps.csv")
+```
+
+
+
+
+```{r}
+library(readr)
+CRNH0203_2010_PA_Avondale_2_N <- read_table2("data/CRNH0203-2010-PA_Avondale_2_N.txt", 
+    col_names = FALSE)
+View(CRNH0203_2010_PA_Avondale_2_N)
+
+```
+
+```{r}
+
+
+```
+
+
